@@ -1,0 +1,105 @@
+/* Reset/Global */
+.wapper-register {
+    background-color: #f6efe8;
+    background-image: url('https://www.transparenttextures.com/patterns/rice-paper-3.png');
+    min-height: 100vh;
+    padding: 3rem 15px;
+}
+
+/* Base Card Content */
+.reg-content.card {
+    background-color: #fffdf5 !important;
+    border: 1px solid #d4af37 !important;
+    border-radius: 8px !important;
+    box-shadow: 0 10px 40px rgba(139, 0, 0, 0.15) !important;
+    position: relative;
+    overflow: hidden;
+    max-width: 650px;
+    margin: auto;
+    width: 100%;
+}
+
+.reg-content.card::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 3px solid #8b0000;
+    pointer-events: none;
+    border-radius: 12px;
+}
+
+/* Forms */
+.form-label {
+    font-weight: 600;
+    color: #4e342e;
+    font-size: 14.5px;
+    margin-bottom: 5px;
+}
+
+.form-label i {
+    color: #8b0000;
+}
+
+.input-custom {
+    border-radius: 4px;
+    border: 1px solid #d0baa8;
+    background-color: #faf7f2;
+    padding: 10px 15px;
+    font-size: 15px;
+    transition: all 0.2s ease-in-out;
+}
+
+.input-custom:focus {
+    background-color: #ffffff;
+    border-color: #d4af37;
+    box-shadow: 0 0 0 0.2rem rgba(212, 175, 55, 0.25);
+    outline: none;
+}
+
+/* Typography styles */
+.create-title {
+    color: #b71c1c;
+    font-size: 26px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+.create-brand {
+    color: #b8860b;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.create-address {
+    font-size: 14px;
+    font-style: italic;
+    color: #795548;
+}
+
+/* Submit Button */
+.btn-primary {
+    background-color: #8b0000 !important;
+    border-color: #8b0000 !important;
+    color: #fff !important;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 16px;
+    transition: all 0.3s;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    background-color: #b71c1c !important;
+    border-color: #b71c1c !important;
+    box-shadow: 0 4px 10px rgba(139, 0, 0, 0.3);
+}
+
+.logo-head img {
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(212, 175, 55, 0.4);
+    background-color: #fff;
+    padding: 2px;
+}

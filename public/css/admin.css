@@ -1,0 +1,179 @@
+.wpl-header .logo {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+}
+.wrapper-login {
+    width: 400px;
+}
+.bdr-50 {
+    border-radius: 50px;
+}
+
+table.dataTable > tbody > tr.child {
+    text-align: left;
+}
+
+.dataTables_paginate {
+    display: none !important;
+}
+
+.dataTables_info {
+    display: none !important; /* Ẩn cả thông tin "Showing 1 to 5 of X entries" */
+}
+
+/* Nút chung: áp dụng cho tất cả các nút */
+.relative.inline-flex {
+    font-size: 14px; /* Kích thước chữ */
+    font-weight: 500; /* Độ đậm chữ */
+    text-decoration: none; /* Bỏ gạch chân */
+    border-radius: 6px; /* Bo góc nhẹ */
+    transition: all 0.2s ease-in-out; /* Hiệu ứng chuyển đổi mượt */
+}
+
+/* Nút Previous và Next trên màn hình nhỏ */
+.sm\:hidden .relative.inline-flex {
+    background-color: #f3f4f6; /* Màu nền xám nhạt */
+    color: #374151; /* Màu chữ xám đậm */
+    border: 1px solid #d1d5db; /* Viền xám */
+}
+
+.sm\:hidden .relative.inline-flex:hover {
+    background-color: #e5e7eb; /* Màu nền khi hover */
+    color: #1f2937; /* Màu chữ đậm hơn khi hover */
+}
+
+/* Nút Previous và Next trên màn hình lớn */
+.hidden.sm\:flex-1 .relative.inline-flex {
+    background-color: #ffffff; /* Màu nền trắng */
+    color: #6b7280; /* Màu chữ xám */
+    border: 1px solid #d1d5db; /* Viền xám */
+}
+
+.hidden.sm\:flex-1 .relative.inline-flex:hover {
+    background-color: #f9fafb; /* Màu nền sáng khi hover */
+    color: #374151; /* Màu chữ đậm hơn khi hover */
+}
+
+/* Nút số trang (1, 2) */
+.hidden.sm\:flex-1 .relative.inline-flex[aria-label^="Go to page"] {
+    background-color: #ffffff; /* Màu nền trắng */
+    color: #374151; /* Màu chữ xám đậm */
+}
+
+.hidden.sm\:flex-1 .relative.inline-flex[aria-label^="Go to page"]:hover {
+    background-color: #f3f4f6; /* Màu nền khi hover */
+    color: #1f2937; /* Màu chữ đậm hơn khi hover */
+}
+
+/* Nút đang active (ví dụ: trang 1) */
+.hidden.sm\:flex-1 .relative.inline-flex[aria-current="page"] {
+    background-color: #3b82f6; /* Màu nền xanh khi active */
+    color: #ffffff; /* Màu chữ trắng */
+    border-color: #3b82f6; /* Viền xanh */
+    cursor: default; /* Không cho click */
+}
+
+/* Nút bị vô hiệu hóa (disabled) */
+.hidden.sm\:flex-1 .relative.inline-flex[aria-disabled="true"] {
+    background-color: #e5e7eb; /* Màu nền xám nhạt */
+    color: #9ca3af; /* Màu chữ xám mờ */
+    cursor: not-allowed; /* Con trỏ không cho click */
+}
+
+/* Icon trong nút Previous và Next */
+.relative.inline-flex svg {
+    width: 18px; /* Kích thước icon */
+    height: 18px;
+}
+
+.logo img {
+    width: 45px;
+}
+
+.loader {
+    display: none;
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 100px auto;
+}
+
+.item-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    width: 250px;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 5px 2px 8px 0px #9e9e9e;
+    flex-flow: column;
+}
+
+.bg-u-accept{
+    background-color: rgb(0, 205, 0);
+    color: #fff;
+}
+
+.bg-u-wait{
+    background-color: #FFC107;
+    color: #fff;
+}
+.bg-u-wait a{
+    color: #fff;
+}
+
+.title-section{
+    border-left: 5px solid #FF5722;
+}
+
+.btn-mwith{
+    min-width: 100px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .admin-title{
+        font-size: 1.3rem;
+    }
+    .admin-box{
+        flex-flow: wrap;
+    }
+    .form-search{
+        flex-flow: wrap;
+    }
+
+    .table-responsive {
+        width: 100%;
+        overflow-x: auto;
+    }
+    
+    .table {
+        min-width: 1200px; /* hoặc lớn hơn nếu bảng nhiều cột */
+        border-collapse: collapse;
+    }
+    .pagination{
+        overflow: scroll;
+        flex-flow: wrap;
+    }
+    .modal {
+        overflow: scroll;
+    }
+
+    .modal-verify{
+        width: 33%
+    }
+}
