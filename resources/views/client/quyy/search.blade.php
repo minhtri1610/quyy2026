@@ -6,8 +6,7 @@
             <h1 class="s-text-header"
                 style="font-size: 2.2rem; display: inline-block; border-right: none; animation: none;">TÌM KIẾM PHÁI QUY Y
             </h1>
-            <p class="text-muted mt-2 fs-6" style="color: #915000 !important;">Tra cứu thông tin phái Quy Y của
-                Phật tử Chùa Phước Lộc</p>
+            <p class="text-muted mt-2 fs-6" style="color: #915000 !important;">Tra cứu thông tin phái Quy Y Phật tử Chùa Phước Lộc</p>
         </div>
 
         <div class="mb-5 w-100">
